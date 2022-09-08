@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-Cream Website @mashfiqurbd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/title-logo.png" type="image/icon">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="./index.html"><img src="./images/logo.png" class="logo" alt="site images logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="textBox">
+                <h2>It's not just a Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus eos ducimus ullam. Quisquam ipsa excepturi est quia ratione commodi consequatur illo vitae eum eligendi. Nobis aspernatur nihil quos veritatis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img src="./images/img1.png" class="starbucks" alt="There is a images box">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/thumb1.png" alt="thumb picture for web" onclick="imgSlider('./images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./images/thumb2.png" alt="thumb picture for web" onclick="imgSlider('./images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./images/thumb3.png" alt="thumb picture for web" onclick="imgSlider('./images/img3.png'); changeCircleColor('#d752b1')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/mashfiqurbd" target="_blank"><img src="./images/facebook.png" alt="facebook picture for web"></a></li>
+            <li><a href="https://www.twitter.com/mashfiqurbd" target="_blank"><img src="./images/twitter.png" alt="twitter picture for web"></a></li>
+            <li><a href="https://instagram.com/mashfiqur2020" target="_blank"><img src="./images/instagram.png" alt="instagram picture for web"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

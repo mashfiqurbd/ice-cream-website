@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(173, 26%, 66%);
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .textBox {
+    position: relative;
+    max-width: 700px;
+}
+.container .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.container .textBox h2 span {
+    color: #017143;
+    font-weight: 900;
+}
+.container .textBox p {
+    color: #333;
+}
+.container .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.container .imageBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.container .imageBox img {
+    max-width: 340px;
+}
+.thumb {
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    max-width: 100px;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 90px;
+}
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(158, 98%, 22%);
+    clip-path: circle(600px at right 800px);
+}
